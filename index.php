@@ -23,17 +23,11 @@
             echo "Failed: " . $e;
         }
 
-            $dir = "/images/";
-
-            // Open a directory, and read its contents
-            if (is_dir($dir)){
-            if ($dh = opendir($dir)){
-                while (($file = readdir($dh)) !== false){
-                echo "filename:" . $file . "<br>";
-                }
-                closedir($dh);
-            }
-            }
+        
     ?>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" />
+        <input type="submit"/>
+    </form>
 </body>
 </html>
