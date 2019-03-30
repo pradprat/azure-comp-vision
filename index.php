@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>azure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
 <?php
 
 require_once 'vendor/autoload.php';
@@ -109,3 +119,5 @@ else
 <form method="post" action="phpQS.php?Cleanup&containerName=<?php echo $containerName; ?>">
     <button type="submit">Press to clean up all resources created by this sample</button>
 </form>
+</body>
+</html>
