@@ -22,12 +22,18 @@
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-        $files = glob("images/*.*");
-        for ($i=1; $i<count($files); $i++)
-        {
-            $num = $files[$i];
-            echo '<img src="'.$num.'" alt="random image">'."&nbsp;&nbsp;";
-        }
+
+            $dir = "/images/";
+
+            // Open a directory, and read its contents
+            if (is_dir($dir)){
+            if ($dh = opendir($dir)){
+                while (($file = readdir($dh)) !== false){
+                echo "filename:" . $file . "<br>";
+                }
+                closedir($dh);
+            }
+            }
     ?>
 </body>
 </html>
