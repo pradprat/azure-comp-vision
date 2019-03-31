@@ -89,6 +89,7 @@ function getLink() {
     // xmlhttp.open("GET", "phpQS.php");
     // xmlhttp.send();
 
+    document.getElementById("images-place").innerHTML="";
     $.get("phpQS.php", function( data ) 
     {
         var str=data;
