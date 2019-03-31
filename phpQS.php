@@ -5,6 +5,7 @@
 
     require_once "./conn.php";
 
+    $containerName = "images";
     // require_once "./create_container.php";
 
     
